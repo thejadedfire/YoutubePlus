@@ -12,6 +12,8 @@
 		0ED9948521B8499B00ABB4BA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0ED9948321B8499B00ABB4BA /* Main.storyboard */; };
 		0ED9948721B8499F00ABB4BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0ED9948621B8499F00ABB4BA /* Assets.xcassets */; };
 		0ED9948A21B8499F00ABB4BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0ED9948821B8499F00ABB4BA /* LaunchScreen.storyboard */; };
+		0ED9949221B84A6100ABB4BA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0ED9949121B84A6100ABB4BA /* GoogleService-Info.plist */; };
+		D3E18DF7F48F1DF3AAE10D49 /* Pods_YoutubePlus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FC322E364C6D92AFBAF2197 /* Pods_YoutubePlus.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,10 @@
 		0ED9948621B8499F00ABB4BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0ED9948921B8499F00ABB4BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0ED9948B21B8499F00ABB4BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0ED9949121B84A6100ABB4BA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		206B4C609C07FDF914EB03CB /* Pods-YoutubePlus.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YoutubePlus.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YoutubePlus/Pods-YoutubePlus.debug.xcconfig"; sourceTree = "<group>"; };
+		2FC322E364C6D92AFBAF2197 /* Pods_YoutubePlus.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YoutubePlus.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4BD2F89F56C2DCCF125C6775 /* Pods-YoutubePlus.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YoutubePlus.release.xcconfig"; path = "Pods/Target Support Files/Pods-YoutubePlus/Pods-YoutubePlus.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3E18DF7F48F1DF3AAE10D49 /* Pods_YoutubePlus.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +47,8 @@
 			children = (
 				0ED9947E21B8499B00ABB4BA /* YoutubePlus */,
 				0ED9947D21B8499B00ABB4BA /* Products */,
+				83965F2FFF09EE064B634230 /* Pods */,
+				5E8A27A06A5E511C777D40EB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,8 +69,26 @@
 				0ED9948621B8499F00ABB4BA /* Assets.xcassets */,
 				0ED9948821B8499F00ABB4BA /* LaunchScreen.storyboard */,
 				0ED9948B21B8499F00ABB4BA /* Info.plist */,
+				0ED9949121B84A6100ABB4BA /* GoogleService-Info.plist */,
 			);
 			path = YoutubePlus;
+			sourceTree = "<group>";
+		};
+		5E8A27A06A5E511C777D40EB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2FC322E364C6D92AFBAF2197 /* Pods_YoutubePlus.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		83965F2FFF09EE064B634230 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				206B4C609C07FDF914EB03CB /* Pods-YoutubePlus.debug.xcconfig */,
+				4BD2F89F56C2DCCF125C6775 /* Pods-YoutubePlus.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +98,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0ED9948E21B8499F00ABB4BA /* Build configuration list for PBXNativeTarget "YoutubePlus" */;
 			buildPhases = (
+				910FF7A8B73045056DF3CB7F /* [CP] Check Pods Manifest.lock */,
 				0ED9947821B8499B00ABB4BA /* Sources */,
 				0ED9947921B8499B00ABB4BA /* Frameworks */,
 				0ED9947A21B8499B00ABB4BA /* Resources */,
+				26FFF2D6BFD27DC0A4FA19F0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -123,12 +152,62 @@
 			buildActionMask = 2147483647;
 			files = (
 				0ED9948A21B8499F00ABB4BA /* LaunchScreen.storyboard in Resources */,
+				0ED9949221B84A6100ABB4BA /* GoogleService-Info.plist in Resources */,
 				0ED9948721B8499F00ABB4BA /* Assets.xcassets in Resources */,
 				0ED9948521B8499B00ABB4BA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		26FFF2D6BFD27DC0A4FA19F0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-YoutubePlus/Pods-YoutubePlus-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YoutubePlus/Pods-YoutubePlus-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		910FF7A8B73045056DF3CB7F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-YoutubePlus-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0ED9947821B8499B00ABB4BA /* Sources */ = {
@@ -280,9 +359,11 @@
 		};
 		0ED9948F21B8499F00ABB4BA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 206B4C609C07FDF914EB03CB /* Pods-YoutubePlus.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KHMZT8Y5NF;
 				INFOPLIST_FILE = YoutubePlus/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -297,9 +378,11 @@
 		};
 		0ED9949021B8499F00ABB4BA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4BD2F89F56C2DCCF125C6775 /* Pods-YoutubePlus.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KHMZT8Y5NF;
 				INFOPLIST_FILE = YoutubePlus/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
