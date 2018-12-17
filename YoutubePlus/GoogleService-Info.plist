@@ -7,9 +7,9 @@
 	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
 	<string>ca-app-pub-3940256099942544/4411468910</string>
 	<key>CLIENT_ID</key>
-	<string>959400647536-7mflbtbqsirnssoapgo67b6crcbh9jon.apps.googleusercontent.com</string>
+	<string>959400647536-u003186aa7bctgl6ni04carhm72p3v73.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.959400647536-7mflbtbqsirnssoapgo67b6crcbh9jon</string>
+	<string>com.googleusercontent.apps.959400647536-u003186aa7bctgl6ni04carhm72p3v73</string>
 	<key>API_KEY</key>
 	<string>AIzaSyAZfLJXYWGT1A6Sx28UGrIzjUAKMDvMCw0</string>
 	<key>GCM_SENDER_ID</key>
@@ -23,15 +23,15 @@
 	<key>STORAGE_BUCKET</key>
 	<string>plus-cf09f.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
-	<true></true>
+	<true/>
 	<key>IS_ANALYTICS_ENABLED</key>
-	<false></false>
+	<false/>
 	<key>IS_APPINVITE_ENABLED</key>
-	<false></false>
+	<false/>
 	<key>IS_GCM_ENABLED</key>
-	<true></true>
+	<true/>
 	<key>IS_SIGNIN_ENABLED</key>
-	<true></true>
+	<true/>
 	<key>GOOGLE_APP_ID</key>
 	<string>1:959400647536:ios:e83c48154478a6d7</string>
 	<key>DATABASE_URL</key>

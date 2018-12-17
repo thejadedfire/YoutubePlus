@@ -12,7 +12,7 @@
 		0ED9948521B8499B00ABB4BA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0ED9948321B8499B00ABB4BA /* Main.storyboard */; };
 		0ED9948721B8499F00ABB4BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0ED9948621B8499F00ABB4BA /* Assets.xcassets */; };
 		0ED9948A21B8499F00ABB4BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0ED9948821B8499F00ABB4BA /* LaunchScreen.storyboard */; };
-		0ED9949221B84A6100ABB4BA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0ED9949121B84A6100ABB4BA /* GoogleService-Info.plist */; };
+		0ED9949621C423B600ABB4BA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0ED9949521C423B600ABB4BA /* GoogleService-Info.plist */; };
 		D3E18DF7F48F1DF3AAE10D49 /* Pods_YoutubePlus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FC322E364C6D92AFBAF2197 /* Pods_YoutubePlus.framework */; };
 /* End PBXBuildFile section */
 
@@ -24,7 +24,7 @@
 		0ED9948621B8499F00ABB4BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0ED9948921B8499F00ABB4BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0ED9948B21B8499F00ABB4BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0ED9949121B84A6100ABB4BA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		0ED9949521C423B600ABB4BA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		206B4C609C07FDF914EB03CB /* Pods-YoutubePlus.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YoutubePlus.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YoutubePlus/Pods-YoutubePlus.debug.xcconfig"; sourceTree = "<group>"; };
 		2FC322E364C6D92AFBAF2197 /* Pods_YoutubePlus.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YoutubePlus.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BD2F89F56C2DCCF125C6775 /* Pods-YoutubePlus.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YoutubePlus.release.xcconfig"; path = "Pods/Target Support Files/Pods-YoutubePlus/Pods-YoutubePlus.release.xcconfig"; sourceTree = "<group>"; };
@@ -69,7 +69,7 @@
 				0ED9948621B8499F00ABB4BA /* Assets.xcassets */,
 				0ED9948821B8499F00ABB4BA /* LaunchScreen.storyboard */,
 				0ED9948B21B8499F00ABB4BA /* Info.plist */,
-				0ED9949121B84A6100ABB4BA /* GoogleService-Info.plist */,
+				0ED9949521C423B600ABB4BA /* GoogleService-Info.plist */,
 			);
 			path = YoutubePlus;
 			sourceTree = "<group>";
@@ -103,6 +103,7 @@
 				0ED9947921B8499B00ABB4BA /* Frameworks */,
 				0ED9947A21B8499B00ABB4BA /* Resources */,
 				26FFF2D6BFD27DC0A4FA19F0 /* [CP] Embed Pods Frameworks */,
+				3008FD8A5C3014E3A13CCBFA /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -152,9 +153,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				0ED9948A21B8499F00ABB4BA /* LaunchScreen.storyboard in Resources */,
-				0ED9949221B84A6100ABB4BA /* GoogleService-Info.plist in Resources */,
 				0ED9948721B8499F00ABB4BA /* Assets.xcassets in Resources */,
 				0ED9948521B8499B00ABB4BA /* Main.storyboard in Resources */,
+				0ED9949621C423B600ABB4BA /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -170,19 +171,43 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-YoutubePlus/Pods-YoutubePlus-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
-				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleAPIClientForREST/GoogleAPIClientForREST.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleAPIClientForREST.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YoutubePlus/Pods-YoutubePlus-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3008FD8A5C3014E3A13CCBFA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-YoutubePlus/Pods-YoutubePlus-resources.sh",
+				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YoutubePlus/Pods-YoutubePlus-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		910FF7A8B73045056DF3CB7F /* [CP] Check Pods Manifest.lock */ = {
