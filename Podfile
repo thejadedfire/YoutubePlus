@@ -6,7 +6,9 @@ target 'YoutubePlus' do
   use_frameworks!
 
   # Pods for YoutubePlus
-  pod 'Firebase/Core'
+  #//pod 'Firebase/Core'
   pod 'GoogleAPIClientForREST/YouTube', '~> 1.2.1'
   pod 'Google/SignIn', '~> 3.0.3'
+  pod 'Alamofire'
+  pod 'SwiftyJSON', '~> 4.0'
 end
